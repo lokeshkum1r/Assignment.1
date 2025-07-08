@@ -228,7 +228,7 @@ const Middle: React.FC = () => {
           {/* Priority & Due Date Columns */}
           <div className="flex flex-col">
             {/* Shared Section Header */}
-            <div className="w-[248px] h-8 p-2 bg-[#DCCFFC] border-b border-gray-300 flex items-center justify-center">
+            <div onClick={() => console.log("Clicked Answer a question")} className="w-[248px] h-8 p-2 bg-[#DCCFFC] border-b border-gray-300 flex items-center justify-center cursor-pointer">
               <img src="/Split.png" alt="" className="w-4 h-4 object-contain mr-1" />
               <span className="text-xs font-medium bg-[#DCCFFC] px-2 py-1 rounded">
                 Answer a question
@@ -303,7 +303,7 @@ const Middle: React.FC = () => {
 
           {/* Est. Value Column */}
           <div className="w-[124px] border-r border-gray-200">
-            <div className="h-8 p-2 bg-[#FAC2AF] border-b border-gray-300 flex items-center justify-center">
+            <div onClick={() => console.log("Clicked Extract")} className="h-8 p-2 bg-[#FAC2AF] border-b border-gray-300 flex items-center justify-center cursor-pointer">
               <img src="/Split.png" alt="" className="w-4 h-4 object-contain mr-1" />
               <span className="text-xs font-medium bg-[#FAC2AF] px-2 py-1 rounded">
                 Extract
@@ -338,7 +338,7 @@ const Middle: React.FC = () => {
 
           {/* Add Column */}
           <div className="w-[124px]">
-            <div className="h-8 p-2 bg-[#EEEEEE]  border-gray-300 text-center text-m text-bold">+</div>
+            <div onClick={() => console.log("add Table")} className="h-8 p-2 bg-[#EEEEEE]  border-gray-300 text-center text-m text-bold cursor-pointer">+</div>
             <div  ref={scrollRefs[7]} className="h-[834px] overflow-y-auto border border-dashed border-gray-300" onScroll={() => handleScroll(7)}>
               <table className="w-full">
                 <thead>
