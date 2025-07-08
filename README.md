@@ -1,69 +1,56 @@
-# React + TypeScript + Vite
+# 🚀 Intern Design Assignment – React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built using **React**, **TypeScript**, and **Vite**, and is a frontend implementation of the [Figma Design Assignment](https://www.figma.com/design/3nywpu5sz45RrCmwe68QZP/Intern-Design-Assigment?node-id=2-2535&t=o23ezbh70zPoXGZd-0) provided for intern evaluation.
 
-Currently, two official plugins are available:
+## 📁 Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+src/
+│
+├── Components/
+│ └── Middle/ # Main UI logic (table rendering, scroll sync, etc.)
+│
+├── data/
+│ └── table_data.json # JSON dataset used for populating the table
+│
+├── App.tsx # Entry UI composition
+├── main.tsx # Vite entry point
+└── index.css # Tailwind CSS setup
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🔧 Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** with **TypeScript**
+- **Vite** for blazing-fast dev server
+- **Tailwind CSS** for utility-first styling
+- **ESLint** for linting and code quality
+- **Custom scroll-sync logic**
+- **Responsive, accessible inputs** (with `title` attributes for a11y)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+# Clone the repo
+git clone https://github.com/your-username/intern-assignment.git
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Navigate into the project folder
+cd intern-assignment
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+ 
+ # To lint the code
+npm run lint
+
+...tseslint.configs.recommendedTypeChecked,
+...tseslint.configs.strictTypeChecked,
+...tseslint.configs.stylisticTypeChecked,
+
+npm install eslint-plugin-react-x eslint-plugin-react-dom
+
+reactX.configs['recommended-typescript'],
+reactDom.configs.recommended,
