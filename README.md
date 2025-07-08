@@ -2,6 +2,8 @@
 
 This project is built using **React**, **TypeScript**, and **Vite**, and is a frontend implementation of the [Figma Design Assignment](https://www.figma.com/design/3nywpu5sz45RrCmwe68QZP/Intern-Design-Assigment?node-id=2-2535&t=o23ezbh70zPoXGZd-0) provided for intern evaluation.
 
+Vercel Deploy link :- https://assignment-1-git-main-lokeshkum1rs-projects.vercel.app/
+
 ## 📁 Project Structure
 
 src/
