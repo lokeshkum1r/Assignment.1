@@ -43,23 +43,23 @@ function Top2() {
                 </div>
 
                 <div className="flex flex-row w-fit gap-4">
-                    <button onClick={() => console.log('Data Import')} className="flex items-center px-2 pl-2 pr-3 py-2 gap-1 w-[90px] h-[36px] border border-gray-300 bg-white rounded-[6px]">
+                    <button onClick={() => console.log('Data Import')} className="flex items-center px-2 pl-2 pr-3 py-2 gap-1 w-[90px] h-[36px] border border-gray-300 bg-white rounded-[6px] cursor-pointer">
                         <img src="/Download.png" alt="Import Icon" className="w-[20px] h-[20px]" />
                         <span className="text-sm font-normal leading-5 tracking-normal text-[#121212]">Import</span>
                     </button>
 
-                    <button onClick={() => console.log('Data Export')} className="flex items-center px-2 pl-2 pr-3 py-2 gap-1 w-[90px] h-[36px] border border-gray-300 bg-white rounded-[6px]">
+                    <button onClick={() => console.log('Data Export')} className="flex items-center px-2 pl-2 pr-3 py-2 gap-1 w-[90px] h-[36px] border border-gray-300 bg-white rounded-[6px] cursor-pointer">
                         <img src="/Upload.svg" alt="Export Icon" className="w-[20px] h-[20px]" />
                         <span className="text-sm font-normal leading-5 tracking-normal text-[#121212]">Export</span>
                     </button>
 
-                    <button onClick={() => console.log('Data Share')} className="flex items-center px-2 pl-2 pr-3 py-2 gap-1 w-[90px] h-[36px] border border-gray-300 bg-white rounded-[6px]">
+                    <button onClick={() => console.log('Data Share')} className="flex items-center px-2 pl-2 pr-3 py-2 gap-1 w-[90px] h-[36px] border border-gray-300 bg-white rounded-[6px] cursor-pointer">
                         <img src="/Share.svg" alt="Share Icon" className="w-[20px] h-[20px]" />
                         <span className="text-sm font-normal leading-5 tracking-normal text-[#121212]">Share</span>
                     </button>
 
-                    <div onClick={() => console.log('Action Done')} className="w-[150px] h-[36px] bg-[#4B6A4F] gap-4 text-white justify-center items-center flex rounded-[6px] " >
-                        <button className='flex items-center px-2 pl-2 pr-3 py-2 gap-1 '>
+                    <div onClick={() => console.log('Action Done')} className="w-[150px] h-[36px] bg-[#4B6A4F] gap-4 text-white justify-center items-center flex rounded-[6px]  " >
+                        <button className='flex items-center px-2 pl-2 pr-3 py-2 gap-1 cursor-pointer '>
                             <img src="/Split.png" alt="" className="w-[20px] h-[20px] " />
                             <span>New Action</span>
                         </button>
